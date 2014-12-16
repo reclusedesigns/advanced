@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- Do you know how layouts work?
+do they fall within yield?
+No, they contain yield, they're the scaffolding stuff around your content
+like, your <head> up there and all the <html> tags
+Then in here we'll render ~~~~PARTIALS~~~~ for your header and footer, and in different views you can do different content
+ -->
+<%= render "header" %>
+<%= yield %>
+<%= render "footer" %>
+
+</body>
+</html>
