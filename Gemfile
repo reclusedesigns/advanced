@@ -38,3 +38,4 @@ gem 'spring',        group: :development
 
 gem "faker"
 gem 'bootstrap-sass', '~> 3.3.1'
+gem 'retina_tag', '~> 1.3.1'

@@ -10,4 +10,16 @@ class PagesController < ApplicationController
 
   def dicks
   end
+
+  def luxury
+  end
+
+  def multi_residential
+  end
+
+  def renovations
+  end
+
+  def contact
+  end
 end
