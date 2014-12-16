@@ -72,8 +72,20 @@ h2{
 
 
 
-/* body */
+/* main */
 /* ---------------------------------------------------------------- */
+
+/* navbar */
+.navbar{
+  background: $brand;
+  border-radius:0;
+  margin-bottom:0;
+  padding-top:60px;
+  .nav li a:hover{
+    background:none;
+  }
+}
+
 
 /* carousel */
 .carousel-caption{
