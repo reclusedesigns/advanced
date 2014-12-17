@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require toys.js
+//= require jquery.stellar
 //= require_tree .

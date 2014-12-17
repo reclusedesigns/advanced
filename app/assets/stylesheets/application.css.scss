@@ -10,9 +10,12 @@
 /* universal */
 
 $brand: #0a2335;
+$brand-lighter: #18566b;
 $secondary: #ce4142;
 $tertiary: #8b9096;
+$dark: #131515;
 $stroke: #dfdfdf;
+
 
 body{
   font-size:16px;
@@ -44,16 +47,26 @@ p,h1,h2,h3,h4{
 h1{
   font-size:40px;
   line-height:1.3em;
-  padding-bottom:20px;
 }
 
 h2{
+  font-size:40px;
+  line-height:1.3em;
+  padding-bottom:20px;
+}
+
+h3{
   font-size:23px;
-  font-height:1.5;
+  line-height:1.5;
 }
 
 p{
   padding-bottom:1.5em;
+  line-height:1.9;
+}
+
+.centered{
+  text-align:center;
 }
 
 
@@ -71,10 +84,48 @@ p{
 
 /* buttons */
 .button{
-  color:$brand;
-  padding:12px 15px;
-  border:1px solid $brand;
+  border: 1px solid $brand-lighter;
   border-radius:3px;
+  color: $brand-lighter;
+  font-size:13px;
+  background: none;
+  cursor: pointer;
+  padding: 25px 40px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button:hover{
+  background: $brand-lighter;
+  color:#fff;
+  text-decoration:none;
+}
+
+.button-secondary{
+  padding:15px;
+  border:1px solid #bbb;
+  color:#999;
+}
+
+.button-secondary:hover{
+  border:1px solid $brand-lighter;
 }
 
 
@@ -86,11 +137,51 @@ p{
   background: $brand;
   border-radius:0;
   margin-bottom:0;
-  padding-top:60px;
-  .nav li a:hover{
-    background:none;
+  padding:20px 0 20px;
+  .nav li{
+    padding:20px 0 0px;
+    a{
+      text-transform:uppercase;
+      padding-bottom:5px;
+      color:#fff;
+      font-size:13px;
+      letter-spacing:3px;
+      &:hover{
+        background:none;
+      }
+    }
   }
 }
+
+.navbar .nav li a::after {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  background: $secondary;
+  content: '';
+  opacity: 0;
+  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.navbar .nav li a:hover::after,
+.navbar .nav li a:focus::after {
+  height: 3px;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.navbar-brand{
+  padding:0;
+  }
 
 .carousel-caption{
   background:rgba(0,0,0,0.36);
@@ -110,22 +201,73 @@ p{
   padding:30px 0 40px;
 }
 
-.introduction{
-  text-align:center;
-}
-
 .options{
   .option{
     background:#fff;
     box-shadow: 0 5px 5px rgba(0,0,0,0.13);
-    border-radius:6px;
+    border-radius:3px;
     text-align:center;
     padding-bottom:40px;
-    img{
-      padding-bottom:20px;
+    .image{
+      width: 100%;
+      height:100%;
+      overflow: hidden;
+      img{
+        padding-bottom:20px;
+        border-radius:3px;
+        -webkit-transition: all 0.4s ease; /* Safari and Chrome */
+        -moz-transition: all 0.4s ease; /* Firefox */
+        -ms-transition: all 0.4s ease; /* IE 9 */
+        -o-transition: all 0.4s ease; /* Opera */
+        transition: all 0.4s ease;
+        &:hover{
+          -webkit-transform:scale(1.1); /* Safari and Chrome */
+          -moz-transform:scale(1.1); /* Firefox */
+          -ms-transform:scale(1.1); /* IE 9 */
+          -o-transform:scale(1.1); /* Opera */
+          transform:scale(1.1);
+        }
+      }
     }
     p{
       padding:20px 15px;
     }
+  }
+}
+
+.breaker{
+  height:420px;
+  padding:0;
+  display:block;
+  background: url('body/breakers/breaker.jpg')fixed no-repeat;
+  background-position: left 450px;
+  border:none;
+}
+
+.recognition{
+  background: url('body/recognition/backer.jpg') no-repeat;
+  border:none;
+  p {
+    color:#eef1f5;
+  }
+  a{
+    color:#eef1f5;
+    text-decoration:underline;
+    &:hover{
+      text-decoration:none;
+      color:#09f;
+    }
+  }
+  img{
+    margin-bottom:40px
+  }
+}
+
+footer{
+  background: $dark;
+  padding:30px 0 10px;
+  color:#aeb0b3;
+  p{
+    font-size:12px;
   }
 }

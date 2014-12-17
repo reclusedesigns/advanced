@@ -14,25 +14,25 @@
         <div class="carousel-caption">
           <h1>Luxury Homes</h1>
           <p>
-            "Delivering custom homes through meticulous design and flawless execution, all for you."
+            Delivering custom homes through meticulous design and flawless execution.
           </p>
         </div>
       </a>
       <a href="multi_residential" class="item">
         <%= image_tag "body/carousel/luxury.jpg" %>
         <div class="carousel-caption">
-          <h1>Luxury Homes</h1>
+          <h1>Multi Residential</h1>
           <p>
-            "Delivering custom homes through meticulous design and flawless execution, all for you."
+            Finding the balance between the efficient use of space, material and cost to generate the highest value.
           </p>
         </div>
       </a>
       <a href="renovations" class="item">
         <%= image_tag "body/carousel/luxury.jpg" %>
         <div class="carousel-caption">
-          <h1>Luxury Homes</h1>
+          <h1>Renovations</h1>
           <p>
-            "Delivering custom homes through meticulous design and flawless execution, all for you."
+            Understanding and respecting the existing space to seamlessly combine the old and the new.
           </p>
         </div>
       </a>
@@ -51,11 +51,11 @@
 
 <section class="quick_contact">
   <div class="container">
-    <h2>Contact <strong>03 9645 9000 </strong>to talk to us about your project.</h2>
+    <h3>Contact <strong>03 9645 9000 </strong>to talk to us about your project.</h3>
   </div>
 </section>
 
-<section class="introduction alt_backer">
+<section class="introduction alt_backer centered">
   <div class="container">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
@@ -73,21 +73,27 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="option">
-          <%= link_to image_tag("body/options/testimonial.jpg", :class=> "img-responsive"), "luxury" %>
+          <div class="image">
+            <%= link_to image_tag("body/options/testimonial.jpg", :class=> "img-responsive"), "luxury" %>
+          </div>
           <p>"They delivered an immensely thorough, fixed estimate within a fortnight. Everything was so transparent.”</p>
           <a href="#" class="button button-secondary">See what people say</a>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="option">
-          <%= image_tag('body/options/buildtwo.jpg', :class=> "img-responsive") %>
+          <div class="image">
+            <%= link_to image_tag('body/options/buildtwo.jpg', :class=> "img-responsive"), "buildtwo_buildnew" %>
+          </div>
           <p>Looking to upgrade your home? Develop your land and offset the cost of building your new home.</p>
           <a href="#" class="button button-secondary">Learn how</a>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="option">
-          <%= image_tag('body/options/facebook.jpg', :class=> "img-responsive") %>
+          <div class="image">
+            <%= link_to image_tag('body/options/facebook.jpg', :class=> "img-responsive"), "https://www.facebook.com/advancedpropertyconstruction/photos_stream?tab=photos_albums"%>
+          </div>
           <p>We’ve put a lot of effort into organising and curating photos of the homes we’ve built.</p>
           <a href="#" class="button button-secondary">See them here</a>
         </div>
@@ -96,29 +102,27 @@
   </div>
 </section>
 
-<section class="breaker">
-  <img></img>
+<section class="breaker" data-stellar-background-ratio="0.5">
 </section>
 
-<section class="about">
+<section class="about centered">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6"><img></img></div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 col-sm-offset-3">
         <h2>We’re more than builders</h2>
         <div class="separator">&nbsp;</div>
-        <p>We’re a family, and for three generations, we’ve been known for the effort we put into our builds. We leave no stone unturned and always aim to over-deliver. Every detail matters.</p>
+        <p>We’re a family. For three generations, we’ve been known for the effort we put into our builds. Every detail counts. We leave no stone unturned and always aim to over-deliver.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="masterbuilder">
+<section class="recognition centered">
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-sm-offset-3">
-        <img></img>
-        <p>We are a member of the <a href="#">Master Builders Group</a>, which means we are committed to promoting the highest standards of workmanship and business conduct.</p>
+        <%= link_to image_tag('body/recognition/logo.jpg'), "http://www.mbav.com.au/vpLink.aspx?ID=1" %>
+        <p>We are a member of the <a href="http://www.mbav.com.au/vpLink.aspx?ID=1">Master Builders Group</a>, which means we are committed to promoting the highest standards of workmanship and business conduct.</p>
       </div>
     </div>
   </div>
