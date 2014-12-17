@@ -58,13 +58,11 @@
 <section class="introduction alt_backer">
   <div class="container">
     <div class="row">
-      <div class="container">
-        <div class="col-sm-8 col-sm-offset-2">
-          <h1>We just do things right.</h1>
-          <div class="separator">&nbsp;</div>
-          <p> For decades, we've placed an emphasis on clear communication and transparency. We don’t believe in shortcuts. It’s this sense of coherence, combined with our commitment to do things right that creates a frictionless, stress-free experience.</p>
-          <a href="#" class="button">Tell us about your project</a>
-        </div>
+      <div class="col-sm-8 col-sm-offset-2">
+        <h1>We just do things right.</h1>
+        <div class="separator">&nbsp;</div>
+        <p> For decades, we've placed an emphasis on clear communication and transparency. We don’t believe in shortcuts. It’s this sense of coherence, combined with our commitment to do things right that creates a frictionless, stress-free experience.</p>
+        <a href="mailto:sales@apc-vic.com" class="button">Tell us about your project</a>
       </div>
     </div>
   </div>
@@ -75,22 +73,23 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="option">
-          <p>"They delivered an immensely thorough, fixed estimate within a fortnight. Everything was so transparent.” – Some guy</p>
-          <a href="#">See what people say</a>
+          <%= link_to image_tag("body/options/testimonial.jpg", :class=> "img-responsive"), "luxury" %>
+          <p>"They delivered an immensely thorough, fixed estimate within a fortnight. Everything was so transparent.”</p>
+          <a href="#" class="button button-secondary">See what people say</a>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="option">
-          <img></img>
+          <%= image_tag('body/options/buildtwo.jpg', :class=> "img-responsive") %>
           <p>Looking to upgrade your home? Develop your land and offset the cost of building your new home.</p>
-          <a>Learn how</a>
+          <a href="#" class="button button-secondary">Learn how</a>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="option">
-          <img></img>
+          <%= image_tag('body/options/facebook.jpg', :class=> "img-responsive") %>
           <p>We’ve put a lot of effort into organising and curating photos of the homes we’ve built.</p>
-          <a>See them here.</a>
+          <a href="#" class="button button-secondary">See them here</a>
         </div>
       </div>
     </div>
