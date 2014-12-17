@@ -36,6 +36,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+gem "rails_12factor"
 gem "faker"
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'retina_tag', '~> 1.3.1'
