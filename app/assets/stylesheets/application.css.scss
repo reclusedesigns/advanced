@@ -134,12 +134,18 @@ p{
 /* ---------------------------------------------------------------- */
 
 .navbar{
-  background: $brand;
+  background: rgba(0,0,0,0.4);
   border-radius:0;
   margin-bottom:0;
-  padding:20px 0 20px;
+  padding:30px 0 20px;
+  -webkit-transition: all 0.4s ease; /* Safari and Chrome */
+  -moz-transition: all 0.4s ease; /* Firefox */
+  -ms-transition: all 0.4s ease; /* IE 9 */
+  -o-transition: all 0.4s ease; /* Opera */
+  transition: all 0.4s ease;
   .nav li{
     padding:20px 0 0px;
+    transition: all 0.4s ease;
     a{
       text-transform:uppercase;
       padding-bottom:5px;
@@ -181,7 +187,25 @@ p{
 
 .navbar-brand{
   padding:0;
+  -webkit-transition: all 0.4s ease; /* Safari and Chrome */
+  -moz-transition: all 0.4s ease; /* Firefox */
+  -ms-transition: all 0.4s ease; /* IE 9 */
+  -o-transition: all 0.4s ease; /* Opera */
+  transition: all 0.4s ease;
   }
+
+.navbar-change{
+  background: $brand;
+  padding:15px 0 10px;
+  .navbar-brand{
+    -ms-transform: scale(0.8); /* IE 9 */
+    -webkit-transform: scale(0.8); /* Chrome, Safari, Opera */
+    transform: scale(0.8);
+  }
+  .nav li{
+    padding:10px 0;
+  }
+}
 
 .carousel-caption{
   background:rgba(0,0,0,0.36);
