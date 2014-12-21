@@ -15,7 +15,7 @@ $secondary: #ce4142;
 $tertiary: #8b9096;
 $dark: #131515;
 $stroke: #dfdfdf;
-
+$alt_secondary: #00acbf;
 
 body{
   font-size:16px;
@@ -39,7 +39,7 @@ section{
 nav li a{
   font-family: 'Open Sans', sans-serif;
   }
-p,h1,h2,h3,h4{
+p,h1,h2,h3,h4, ul li{
   font-family: 'Merriweather', serif;
   font-weight:200;
   }
@@ -69,7 +69,9 @@ p{
   text-align:center;
 }
 
-
+ul li{
+  list-style-type:none;
+}
 
 /* separator */
 .separator{
@@ -81,6 +83,13 @@ p{
   padding-bottom: 1.5em;
 }
 
+.separator_left{
+  display:block;
+  border-top: 3px solid $secondary;
+  background:none;
+  width:150px;
+  padding-bottom: 1.5em;
+}
 
 /* buttons */
 .button{
@@ -92,7 +101,7 @@ p{
   cursor: pointer;
   padding: 25px 40px;
   display: inline-block;
-  margin: 15px 30px;
+  margin: 15px 0 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
@@ -136,7 +145,7 @@ p{
 
 /* heroes */
 .hero{padding:0;}
-.contact{}
+
 
 .navbar{
   background: rgba(0,0,0,0.4);
@@ -265,13 +274,18 @@ p{
 }
 
 .breaker{
-  height:420px;
+  height:520px;
   padding:0;
   display:block;
-  background: url('body/breakers/breaker.jpg')fixed no-repeat;
-  background-position: left 450px;
   border:none;
 }
+
+.breaker1{background: url('body/breakers/breaker.jpg')fixed no-repeat; background-position: left 450px; height:420px;}
+.breaker2{background: url('body/breakers/2.jpg')fixed no-repeat;}
+.breaker3{background: url('body/breakers/3.jpg')fixed no-repeat;}
+.breaker4{background: url('body/breakers/4.jpg')fixed no-repeat;}
+.breaker5{background: url('body/breakers/5.jpg')fixed no-repeat;}
+
 
 .recognition{
   background: url('body/recognition/backer.jpg') no-repeat;
@@ -291,6 +305,30 @@ p{
     margin-bottom:40px
   }
 }
+
+.alt_secondary{
+  color:#fff;
+  background:$alt_secondary;
+  border:none;
+  .checks{
+    background:#009aab;
+    padding:30px;
+    li{
+      font-size:28px;
+      font-weight:100;
+      line-height:2.0em;
+    }
+  }
+}
+
+.title h3{
+  padding-bottom: 60px;
+}
+
+.testimonial_block{
+  p.cite{font-style:italic;}
+}
+
 
 footer{
   background: $dark;
