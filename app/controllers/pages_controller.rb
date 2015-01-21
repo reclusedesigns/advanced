@@ -20,7 +20,7 @@ class PagesController < ApplicationController
   def renovations
   end
 
-  def buildtwo_buildnew
+  def buildnew_buildtwo
   end
 
   def contact
