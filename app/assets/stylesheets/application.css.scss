@@ -314,7 +314,10 @@ ul li{
   height:360px;
 }
 
-.breaker1{background: url('body/breakers/breaker.jpg')fixed no-repeat; height:420px;}
+.breaker1{background: url('body/breakers/breaker.jpg')fixed no-repeat;
+  height:420px;
+  background-size:100% auto;
+  }
 .breaker2{
   background: url('body/breakers/2.jpg')fixed no-repeat;
   background-size:100% auto;
@@ -393,7 +396,7 @@ footer{
 
 
 @media(max-width:767px){
-
+  .logo_title{display:none;}
 }
 @media(min-width:768px){
 
